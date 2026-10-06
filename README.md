@@ -1,20 +1,33 @@
-# Vikash's AI Portfolio Platform
+# Vikash's Portfolio
 
-This repository contains the source code for Vikash's professional developer portfolio. It features a custom AI Chatbot, automated workflow bridges, a unified serverless contact delivery backend, and a premium modern UI design.
+A responsive portfolio with skills, certificates, and direct contact links. The homepage uses local assets and vanilla JavaScript, including accessible navigation, certificate previews, and animations that respect reduced-motion preferences. Its quick portfolio guide provides preset information locally and does not need an AI API.
 
-## Recent UI/UX Enhancements
-We recently undertook a comprehensive redesign to ensure the portfolio reflects enterprise-level standards:
-* **Component Restyling**:
-  * Transformed the "Get In Touch" and "Visitor Guest Book" forms into sharp, fully-covered rectangular layouts (`100%` width, `8px` border radius) for a sleek, modern appearance without awkward gaps.
-  * Reordered the footer widgets to prioritize key information: *About the Engineer*, *Contact Card*, *Quick Actions*, and *Digital Presence*.
-  * Cleaned up the "Quick Actions" and "Digital Presence" link lists, removing boxed borders and backgrounds, and utilizing a unified professional accent color (`#0ea5e9`) for all icons.
-* **Typography & Styling**: Upgraded the "About Me" section and headers using the professional 'Outfit' font (bold), enhancing visual hierarchy and readability.
-* **Integrations**: Integrated a dynamic LinkedIn profile badge block directly into the UI.
-* **AI Chatbot**: Fixed click-handling bugs in the AI Chatbot's send button and quick-action chips to ensure lightning-fast responsiveness.
+## Local frontend development
 
-## Contact Form Backend Configuration
+```bash
+npm ci
+npm run dev
+```
 
-Both contact forms (the main footer contact form and the interactive form inside the AI Chatbot bubble) submit messages directly to the unified backend route `/api/contact`.
+Open **http://127.0.0.1:5500**. Set `PORT` to use another port, for example `PORT=5501 npm run dev`. The preview serves only the portfolio pages and browser assets; `/api` requests return a clear `503` response because this workflow does not run the backend.
+
+The main design files are `index.html`, `css/portfolio.css`, and `js/portfolio.js`. Fonts, portraits, and certificates live in `assets/`. No frontend build step or API credentials are required.
+
+For optional browser smoke checks, install Playwright and its Chromium browser in your development tooling, start the preview, and run:
+
+```bash
+node tests/portfolio.smoke.cjs
+```
+
+The checks use `http://127.0.0.1:5500` and `/usr/bin/chromium` by default. Set `PORTFOLIO_URL` or `CHROMIUM_PATH` for a different preview address or browser installation.
+
+## Legacy bridge and integrations
+
+`npm start` still launches the legacy `server.js` bridge. That backend currently references missing modules, including `lib/contact-delivery.js` and `lib/analytics-store.js`, and requires separate repair before it can start. The redesigned homepage uses email and social links for contact. The following backend notes describe the older integration paths and do not apply to the frontend preview.
+
+### Contact backend configuration
+
+The legacy contact forms submit to `/api/contact`.
 
 To receive incoming contact messages, configure **any** of the following notification channels in your local `.env` file or hosting environment variables dashboard. The backend will automatically detect and route messages to all configured systems:
 
@@ -34,20 +47,6 @@ Deliver submissions directly to your email inbox:
 * `SMTP_USER`: The sender email address.
 * `SMTP_PASS`: The sender account password (if using Gmail, generate and use a secure **App Password**).
 * `CONTACT_RECEIVER_EMAIL`: The inbox address where you want to receive these messages (defaults to `vikash07052008@gmail.com` if left blank).
-
----
-
-## Local Development
-
-1. Install local dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the local Express bridge server:
-   ```bash
-   npm start
-   ```
-3. Open `index.html` in your browser. The frontend will automatically detect localhost and route form submissions and chatbot completions to `http://localhost:3000`.
 
 ---
 

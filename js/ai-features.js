@@ -25,7 +25,7 @@ About Vikash:
 - Skills: React, TypeScript, Vite, Tailwind CSS, Supabase, Framer Motion, Next.js, Python, Node.js, HTML, CSS, JavaScript
 - GitHub: https://github.com/vikashsaravanann
 - LinkedIn: https://linkedin.com/in/vikash-saravanan-j7528
-- Instagram: @startupwithVikash
+- Instagram: @vikash.saravanann
 - Email: vikash07052008@gmail.com
 - Open to: Frontend Developer, Full-Stack, and Web Development roles
 

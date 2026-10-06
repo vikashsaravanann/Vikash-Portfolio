@@ -182,11 +182,7 @@ Objective: Ambitious student actively building enterprise-grade AI automation sy
 - Prompt Engineering, LLM Integration
 - n8n Automation, Cloud Deployments`,
         
-        'projects': () => `[Key Projects]
-1. HearWise (AI Hearing Screening)
-2. OpenEnv Debugger (Meta Hackathon Finalist)
-3. Portfolio AI Chatbot
-4. Logic Intelligence Tech CRM`,
+        'projects': () => `No projects are currently featured on this website.`,
         
         'contact': () => `[Contact Data]
 Email: vikash07052008@gmail.com

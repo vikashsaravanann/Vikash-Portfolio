@@ -34,7 +34,7 @@ VIKASH SARAVANAN — FULL PROFILE:
 • Email: vikash07052008@gmail.com | Phone: +91 9342877474
 • LinkedIn: linkedin.com/in/vikash-saravanan-j7528
 • GitHub: github.com/vikashsaravanann
-• Instagram: @startupwithvikash
+• Instagram: @vikash.saravanann
 
 TECHNICAL SKILLS:
 • Languages: Python, JavaScript, TypeScript, SQL, HTML/CSS
@@ -42,24 +42,11 @@ TECHNICAL SKILLS:
 • Automation: n8n, web scraping, autonomous agents
 • Data: Pandas, NumPy, Matplotlib, Power BI
 
-PROJECTS (16 total):
+PROJECTS (3 total):
 Always mention the GitHub link when talking about a project.
-1. Portfolio_Information: Personal portfolio with AI assistant. GitHub: github.com/vikashsaravanann/Portfolio_Information
-2. HearWise Child Health: Mobile-first clinical hearing screening. GitHub: github.com/vikashsaravanann/hearwise-child-health
-3. OpenEnv-Debugger: AI agent simulation (Meta Hackathon). GitHub: github.com/vikashsaravanann/OpenEnv-Debugger
-4. AI Traffic Management System: Arduino LED control via YOLOv8. GitHub: github.com/vikashsaravanann/AI-Traffic-Management-system
-5. Dropout Alert System: Edge AI predictive system. GitHub: github.com/vikashsaravanann/dropout-alert-system
-6. IPL Data Analysis: Comprehensive EDA of IPL cricket data. GitHub: github.com/vikashsaravanann/IPL-Data-Analysis-Project
-7. GameHub: Console-based Python arcade. GitHub: github.com/vikashsaravanann/gamehub
-8. FCC Mean-Variance Calculator: Python statistical metrics. GitHub: github.com/vikashsaravanann/fcc-mean-variance-calculator
-9. FCC Demographic Data Analyzer: 1994 US census dataset analysis. GitHub: github.com/vikashsaravanann/fcc-demographic-data-analyzer
-10. FCC Medical Data Visualizer: Medical exam datasets using heatmaps. GitHub: github.com/vikashsaravanann/fcc-medical-data-visualizer
-11. FCC Page View Time Series: Visualization of forum page views. GitHub: github.com/vikashsaravanann/fcc-page-view-time-series-visualizer
-12. FCC Sea Level Predictor: Modeling predicting sea level rise. GitHub: github.com/vikashsaravanann/fcc-sea-level-predictor
-13. Logic-Intelligence: Agency workflow layouts. GitHub: github.com/vikashsaravanann/Logic-Intelligence
-14. BroadcastAI-Portfolio: AI broadcasting concept. GitHub: github.com/vikashsaravanann/BroadcastAI-Portfolio
-15. Web-Development: Responsive single-page structures. GitHub: github.com/vikashsaravanann/Web-Development
-16. portfolio.vikashsaravanan: Archived asset repository. GitHub: github.com/vikashsaravanann/portfolio.vikashsaravanan
+1. BroadcastAI-Portfolio: AI broadcasting concept. GitHub: github.com/vikashsaravanann/BroadcastAI-Portfolio
+2. Web-Development: Responsive single-page structures. GitHub: github.com/vikashsaravanann/Web-Development
+3. portfolio.vikashsaravanan: Archived asset repository. GitHub: github.com/vikashsaravanann/portfolio.vikashsaravanan
 
 ACHIEVEMENTS:
 • Hackathon Finalist — Meta PyTorch (OpenEnv)
@@ -454,15 +441,7 @@ AVAILABILITY:
     const lower = text.toLowerCase();
     const container = document.createElement('div');
 
-    if (lower.includes('hearwise')) {
-      container.className = 'chat-rich-card';
-      container.innerHTML = `
-        <h4>🚀 HearWise Platform</h4>
-        <p>AI-powered hearing screening & interactive gamified ocean platform designed for children.</p>
-        <a href="index.html#hearwise" class="chat-rich-btn"><i class="fas fa-external-link-alt"></i> View Project details</a>
-      `;
-      return container;
-    }
+
     if (lower.includes('certifications') || lower.includes('certification') || lower.includes('certs')) {
       container.className = 'chat-rich-card';
       container.innerHTML = `

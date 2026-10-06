@@ -1,13 +1,23 @@
 {
-  "name": "Vikash Saravanan Portfolio",
-  "short_name": "Vikash Portfolio",
-  "description": "Portfolio of Vikash Saravanan J — AI & Full-Stack Developer, Founder",
-  "start_url": "/startupwithvikash/",
+  "name": "Vikash Saravanan — Portfolio",
+  "short_name": "Vikash",
+  "description": "AI, web development, and selected projects by Vikash Saravanan.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0ea5e9",
+  "background_color": "#f6f5ef",
+  "theme_color": "#193b2d",
   "icons": [
-    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
