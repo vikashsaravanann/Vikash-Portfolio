@@ -1,0 +1,15 @@
+.git
+node_modules
+dist
+tests
+api
+lib
+server.js
+.env*
+artifacts
+scripts/redesign.py
+assets/family
+assets/friends
+assets/childhood
+assets/school
+assets/certs

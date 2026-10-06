@@ -1,13 +1,3 @@
-# Vikash Saravanan Portfolio — Robots.txt
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /.env
-Disallow: /node_modules/
-Disallow: /server.js
-
-# Sitemap
-Sitemap: https://vikashsaravanann.github.io/startupwithvikash/sitemap.xml
-
-# Crawl-delay (polite crawling)
-Crawl-delay: 5
+Sitemap: https://vikash-portfolio-green.vercel.app/sitemap.xml

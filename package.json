@@ -1,11 +1,13 @@
 {
   "name": "vikash-portfolio-bridge",
   "version": "1.0.0",
-  "description": "Bridge server for X.AI API",
+  "description": "Vikash Saravanan \u2014 full-stack software and AI systems portfolio",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node scripts/preview.js"
+    "dev": "npm run build && node scripts/preview.js",
+    "build": "node scripts/build.js",
+    "test": "npm run build && node --test tests/portfolio.smoke.cjs"
   },
   "dependencies": {
     "cors": "^2.8.5",

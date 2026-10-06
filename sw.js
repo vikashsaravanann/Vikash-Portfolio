@@ -1,9 +1,12 @@
 const CACHE_PREFIX = "vikash-portfolio-";
-const CACHE_NAME = `${CACHE_PREFIX}v3`;
+const CACHE_NAME = `${CACHE_PREFIX}v4`;
 const SCOPE_URL = new URL(self.registration.scope);
 const HOME_URL = new URL("index.html", SCOPE_URL).href;
 const CORE_URLS = [
   "index.html",
+  "voiceshield.html",
+  "logic-voice.html",
+  "business-ai.html",
   "css/portfolio.css",
   "js/portfolio.js",
   "js/register-sw.js",
