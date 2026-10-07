@@ -16,9 +16,9 @@ const files = [
   "manifest.json",
   "robots.txt",
   "sitemap.xml",
-  "assets/fonts/dm-sans-latin.woff2",
+  "assets/fonts/manrope-latin.woff2",
   "assets/fonts/instrument-serif-italic.woff2",
-  "assets/fonts/DM-Sans-LICENSE.txt",
+  "assets/fonts/Manrope-LICENSE.txt",
   "assets/fonts/Instrument-Serif-LICENSE.txt",
   "assets/profile/hero-portrait-v2.webp",
   "assets/profile/profile2.webp",
@@ -26,7 +26,7 @@ const files = [
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
   "assets/og-preview.png",
-  "assets/landing-preview-v3.jpg",
+  "assets/landing-preview-v4.jpg",
   "assets/docs/Vikash_Saravanan_Resume.pdf",
 ];
 fs.rmSync(output, { recursive: true, force: true });

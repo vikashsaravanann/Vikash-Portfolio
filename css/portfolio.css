@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "DM Sans";
-  src: url("../assets/fonts/dm-sans-latin.woff2") format("woff2");
-  font-weight: 100 1000;
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-latin.woff2") format("woff2");
+  font-weight: 200 800;
   font-display: swap;
 }
 @font-face {
@@ -18,7 +18,7 @@
   --line: #d9ddcf;
   --lime: #dbeaaf;
   --serif: "Instrument Serif", Georgia, serif;
-  --sans: "DM Sans", Arial, sans-serif;
+  --sans: "Manrope", Arial, sans-serif;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 *,
@@ -2258,4 +2258,33 @@ html.motion-paused .reveal {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* A clear type hierarchy with a precise, contemporary sans-serif. */
+body {
+  font-weight: 450;
+}
+h1,
+h2,
+h3 {
+  font-weight: 550;
+}
+.hero h1 {
+  font-weight: 550;
+  letter-spacing: -0.055em;
+}
+.site-nav,
+.button,
+.text-link {
+  font-weight: 600;
+}
+.hero-description {
+  line-height: 1.9;
+}
+.wordmark {
+  font-weight: 800;
+  letter-spacing: -0.65px;
+}
+.eyebrow {
+  font-weight: 700;
 }
