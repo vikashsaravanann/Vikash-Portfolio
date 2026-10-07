@@ -2233,3 +2233,29 @@ html.motion-paused .reveal {
     letter-spacing: -0.55px;
   }
 }
+
+/* Draw symbols explicitly so iOS never substitutes emoji artwork. */
+.glyph {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: -0.12em;
+  flex-shrink: 0;
+}
+.glyph-spark {
+  stroke-width: 1.15;
+}
+.voice-orb b {
+  display: grid;
+  place-items: center;
+}
+.rag-mark b {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "vikash-portfolio-";
-const CACHE_NAME = `${CACHE_PREFIX}v6`;
+const CACHE_NAME = `${CACHE_PREFIX}v7`;
 const SCOPE_URL = new URL(self.registration.scope);
 const HOME_URL = new URL("index.html", SCOPE_URL).href;
 const CORE_URLS = [
