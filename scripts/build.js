@@ -24,7 +24,7 @@ const files = [
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
   "assets/og-preview.png",
-  "assets/landing-preview-v5.jpg",
+  "assets/landing-preview-v6.jpg",
   "assets/docs/Vikash_Saravanan_Resume.pdf",
 ];
 fs.rmSync(output, { recursive: true, force: true });
