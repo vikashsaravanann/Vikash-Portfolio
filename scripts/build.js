@@ -18,13 +18,13 @@ const files = [
   "sitemap.xml",
   "assets/fonts/manrope-latin.woff2",
   "assets/fonts/Manrope-LICENSE.txt",
-  "assets/profile/hero-portrait-v2.webp",
+  "assets/profile/hero-portrait-v3.webp",
   "assets/profile/profile2.webp",
   "assets/icons/monogram.svg",
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
   "assets/og-preview.png",
-  "assets/landing-preview-v6.jpg",
+  "assets/landing-preview-v7.jpg",
   "assets/docs/Vikash_Saravanan_Resume.pdf",
 ];
 fs.rmSync(output, { recursive: true, force: true });
