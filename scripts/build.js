@@ -17,16 +17,14 @@ const files = [
   "robots.txt",
   "sitemap.xml",
   "assets/fonts/manrope-latin.woff2",
-  "assets/fonts/instrument-serif-italic.woff2",
   "assets/fonts/Manrope-LICENSE.txt",
-  "assets/fonts/Instrument-Serif-LICENSE.txt",
   "assets/profile/hero-portrait-v2.webp",
   "assets/profile/profile2.webp",
   "assets/icons/monogram.svg",
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
   "assets/og-preview.png",
-  "assets/landing-preview-v4.jpg",
+  "assets/landing-preview-v5.jpg",
   "assets/docs/Vikash_Saravanan_Resume.pdf",
 ];
 fs.rmSync(output, { recursive: true, force: true });

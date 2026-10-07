@@ -4,12 +4,6 @@
   font-weight: 200 800;
   font-display: swap;
 }
-@font-face {
-  font-family: "Instrument Serif";
-  src: url("../assets/fonts/instrument-serif-italic.woff2") format("woff2");
-  font-style: italic;
-  font-display: swap;
-}
 :root {
   --paper: #f6f5ef;
   --ink: #243229;
@@ -17,7 +11,7 @@
   --muted: #657063;
   --line: #d9ddcf;
   --lime: #dbeaaf;
-  --serif: "Instrument Serif", Georgia, serif;
+  --serif: var(--sans);
   --sans: "Manrope", Arial, sans-serif;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
@@ -2287,4 +2281,323 @@ h3 {
 }
 .eyebrow {
   font-weight: 700;
+}
+/* One typeface across every page, including former editorial accents. */
+:root {
+  --serif: var(--sans);
+}
+em {
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 600;
+}
+.hero h1 em,
+h2 em {
+  font-size: 1em;
+  letter-spacing: inherit;
+}
+.portrait-signature em {
+  font-size: 21px;
+  letter-spacing: -0.7px;
+  line-height: 1.4;
+}
+.about-caption em {
+  font-size: 29px;
+  letter-spacing: -1px;
+}
+.voice-caption em {
+  font-size: 19px;
+  letter-spacing: -0.6px;
+}
+button,
+a,
+input,
+textarea,
+select {
+  font-family: var(--sans);
+}
+/* Shared action treatment: visible contrast, generous touch targets, clear states. */
+.button,
+.text-link,
+.copy-email,
+#motion-toggle,
+.footer-links > a,
+.footer-bottom > a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  max-width: 100%;
+  padding: 12px 17px;
+  border: 1px solid #bbc9aa;
+  border-radius: 12px;
+  background: #eaf0de;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  text-align: center;
+  box-shadow: 0 2px 0 #24322908;
+  transition:
+    background 0.25s var(--ease),
+    color 0.25s var(--ease),
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease),
+    border-color 0.25s var(--ease);
+}
+.button-primary {
+  background: linear-gradient(135deg, #244d3b, #173d2c);
+  border-color: #193b2d;
+  color: #fff;
+  box-shadow: 0 6px 16px #193b2d20;
+}
+.button-primary:hover {
+  background: #2f5c42;
+  border-color: #2f5c42;
+  color: white;
+  box-shadow: 0 9px 22px #193b2d30;
+}
+.text-link:hover,
+.copy-email:hover,
+#motion-toggle:hover,
+.footer-links > a:hover,
+.footer-bottom > a:hover {
+  background: var(--lime);
+  border-color: #91ad6a;
+  color: #173d2c;
+  box-shadow: 0 7px 18px #193b2d14;
+  transform: translateY(-2px);
+}
+.button:active,
+.text-link:active,
+.copy-email:active,
+.round-link:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #789952;
+  outline-offset: 4px;
+}
+.button .glyph,
+.text-link .glyph {
+  width: 17px;
+  height: 17px;
+  transition: transform 0.25s var(--ease);
+}
+.button:hover .glyph,
+.text-link:hover .glyph {
+  transform: translate(2px, -2px);
+}
+.hero-actions,
+.project-links {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.project-links {
+  margin-top: 24px;
+}
+.round-link {
+  width: 46px;
+  height: 46px;
+  background: #e7efdb;
+  color: #27452d;
+  border: 1px solid #b8c9a2;
+  box-shadow: 0 3px 10px #193b2d0a;
+}
+.round-link:hover {
+  background: var(--lime);
+  border-color: #8eac62;
+  box-shadow: 0 6px 16px #193b2d1a;
+  transform: translateY(-2px);
+}
+.site-nav {
+  gap: 9px;
+}
+.site-nav > a {
+  padding: 10px 13px;
+  border-radius: 10px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    border-color 0.25s;
+}
+.site-nav > a:not(.nav-contact)::after {
+  display: none;
+}
+.site-nav > a:hover,
+.site-nav > a[aria-current] {
+  background: #e9efdf;
+  border-color: #ccd7bc;
+  color: #1c402c;
+}
+.site-nav .nav-contact {
+  background: var(--lime);
+  border-color: #b4c98e;
+  color: #203c29;
+  font-weight: 700;
+  gap: 13px;
+}
+.site-nav .nav-contact:hover {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+.menu-toggle {
+  border-color: #b7c6a5;
+  background: #edf2e5;
+  box-shadow: 0 3px 10px #193b2d08;
+}
+.menu-toggle:hover {
+  background: var(--lime);
+}
+.email-link {
+  display: inline-block;
+  padding: 12px 16px;
+  min-height: 46px;
+  border: 1px solid #b7c6a5;
+  border-radius: 12px;
+  background: #eaf0de;
+  font-size: 17px;
+  font-weight: 650;
+  color: var(--green);
+  transition: background 0.25s;
+}
+.email-link:hover {
+  background: var(--lime);
+}
+.copy-email {
+  margin-left: 8px;
+}
+.footer-links {
+  gap: 9px;
+}
+.footer-links > a {
+  min-height: 40px;
+  padding: 9px 13px;
+  font-size: 11px;
+  justify-content: flex-start;
+  text-align: left;
+}
+.footer-links .text-link {
+  font-size: 11px;
+}
+.footer-bottom > a,
+#motion-toggle {
+  min-height: 40px;
+  font-size: 10px;
+  padding: 9px 13px;
+}
+#motion-toggle[aria-pressed="true"] {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+#motion-toggle:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+.contact-socials {
+  gap: 10px;
+}
+.case-next {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+.case-next h2 {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.case-next .text-link {
+  margin-left: 0;
+}
+@media (max-width: 1100px) {
+  .site-nav {
+    gap: 3px;
+  }
+  .site-nav > a {
+    padding: 9px 9px;
+  }
+}
+@media (min-width: 681px) and (max-width: 860px) {
+  .site-nav > a {
+    padding: 8px 7px;
+    font-size: 10px;
+  }
+  .site-nav .nav-contact {
+    gap: 8px;
+  }
+}
+@media (max-width: 680px) {
+  .site-nav {
+    gap: 7px;
+  }
+  .site-nav > a {
+    justify-content: flex-start;
+    min-height: 46px;
+    padding: 12px 15px;
+    background: #eaf0de;
+    border-color: #d2dbc4;
+  }
+  .site-nav .nav-contact {
+    margin-top: 0;
+    justify-content: space-between;
+  }
+  .hero-actions .text-link,
+  .project-links .text-link,
+  .contact-socials .text-link {
+    font-size: 11px;
+  }
+  .hero-actions {
+    gap: 10px;
+  }
+  .hero-actions .button,
+  .hero-actions .text-link {
+    flex: 1 1 135px;
+  }
+  .project-links .text-link {
+    flex: 1 1 145px;
+  }
+  .portrait-signature em {
+    font-size: 19px;
+  }
+  .about-caption em {
+    font-size: 27px;
+  }
+  .voice-caption em {
+    font-size: 18px;
+  }
+  .email-link {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .copy-email {
+    display: inline-flex;
+    margin: 10px 0 0;
+  }
+  .footer-links > a {
+    width: 100%;
+  }
+  .contact-bottom > div {
+    min-width: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button:hover,
+  .text-link:hover,
+  .round-link:hover,
+  .button:hover .glyph,
+  .text-link:hover .glyph {
+    transform: none;
+  }
 }

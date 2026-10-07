@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "vikash-portfolio-";
-const CACHE_NAME = `${CACHE_PREFIX}v8`;
+const CACHE_NAME = `${CACHE_PREFIX}v9`;
 const SCOPE_URL = new URL(self.registration.scope);
 const HOME_URL = new URL("index.html", SCOPE_URL).href;
 const CORE_URLS = [
@@ -11,7 +11,6 @@ const CORE_URLS = [
   "js/portfolio.js",
   "js/register-sw.js",
   "assets/fonts/manrope-latin.woff2",
-  "assets/fonts/instrument-serif-italic.woff2",
   "assets/profile/hero-portrait-v2.webp",
   "assets/icons/monogram.svg",
   "manifest.json",
