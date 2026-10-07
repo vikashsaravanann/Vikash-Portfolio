@@ -20,13 +20,13 @@ const files = [
   "assets/fonts/instrument-serif-italic.woff2",
   "assets/fonts/DM-Sans-LICENSE.txt",
   "assets/fonts/Instrument-Serif-LICENSE.txt",
-  "assets/profile/profile11.webp",
+  "assets/profile/hero-portrait-v2.webp",
   "assets/profile/profile2.webp",
   "assets/icons/monogram.svg",
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
   "assets/og-preview.png",
-  "assets/landing-preview-v2.jpg",
+  "assets/landing-preview-v3.jpg",
   "assets/docs/Vikash_Saravanan_Resume.pdf",
 ];
 fs.rmSync(output, { recursive: true, force: true });
