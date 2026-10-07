@@ -2184,3 +2184,52 @@ html.motion-paused .reveal {
     display: none;
   }
 }
+
+/* Full-name signature, sized to keep the mobile menu comfortably within reach. */
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 1px;
+  font-size: 22px;
+  letter-spacing: -0.8px;
+  white-space: nowrap;
+}
+.wordmark .wordmark-name {
+  color: var(--ink);
+}
+.wordmark .wordmark-dot {
+  color: #718c55;
+}
+.wordmark:hover .wordmark-dot {
+  animation: signature-pulse 0.8s var(--ease);
+}
+@keyframes signature-pulse {
+  50% {
+    transform: translateY(-3px);
+  }
+}
+@media (max-width: 1100px) {
+  .wordmark {
+    font-size: 19px;
+    letter-spacing: -0.6px;
+  }
+  .site-nav {
+    gap: 18px;
+  }
+}
+@media (min-width: 681px) and (max-width: 860px) {
+  .wordmark {
+    font-size: 17px;
+    letter-spacing: -0.5px;
+  }
+  .site-nav {
+    gap: 11px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 680px) {
+  .wordmark {
+    font-size: clamp(17px, 4.8vw, 23px);
+    letter-spacing: -0.55px;
+  }
+}
